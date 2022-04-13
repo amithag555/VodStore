@@ -1,0 +1,60 @@
+.container {
+  min-height: 900px;
+  max-width: 1400px;
+}
+
+.container .movie_div {
+  min-height: 560px;
+}
+
+.container .img_info_div {
+  height: 560px;
+}
+
+.container .info_div {
+  height: 560px;
+  background: rgb(52, 51, 51);
+}
+
+.info_div .in_info_div {
+  padding: 60px;
+}
+
+.container .arrow_div {
+  margin-top: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .container .img_info_div {
+    height: 800px;
+    width: 75%;
+  }
+
+  .container .info_div {
+    height: 100%;
+    width: 75%;
+    background: rgb(52, 51, 51);
+  }
+
+  .info_div .in_info_div {
+    padding: 32px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .img_info_div {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container .info_div {
+    width: 100%;
+    background: rgb(52, 51, 51);
+  }
+
+  .info_div .in_info_div {
+    padding: 32px 12px;
+  }
+}
