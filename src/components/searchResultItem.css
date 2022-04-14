@@ -1,0 +1,83 @@
+.year_select {
+  background: rgb(133, 195, 220);
+  font-weight: bold;
+  display: none;
+}
+
+.item_div {
+  height: 500px;
+  transition: 1000ms;
+}
+
+.item_div:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card_title_div {
+  height: 15%;
+  width: 80%;
+  background: rgb(52, 51, 51);
+}
+
+.card_title_div:hover {
+  cursor: pointer;
+}
+
+.img_div {
+  height: 85%;
+  width: 80%;
+}
+
+.img_div:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .img_div {
+    height: 85%;
+    width: 60%;
+  }
+
+  .card_title_div {
+    height: 15%;
+    width: 60%;
+    background: rgb(52, 51, 51);
+  }
+
+  .item_div {
+    height: 700px;
+    transition: none;
+  }
+
+  .item_div:hover {
+    transform: none;
+  }
+
+  .year_select {
+    background: rgb(133, 195, 220);
+    font-weight: bold;
+    display: block;
+  }
+
+  .year_nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .item_div {
+    height: 600px;
+    transition: none;
+  }
+
+  .img_div {
+    height: 85%;
+    width: 70%;
+  }
+
+  .card_title_div {
+    height: 15%;
+    width: 70%;
+    background: rgb(52, 51, 51);
+  }
+}

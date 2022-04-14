@@ -1,0 +1,18 @@
+nav {
+  min-height: 75px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+nav .link {
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: rgb(133, 195, 220);
+}
