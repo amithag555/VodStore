@@ -16,3 +16,21 @@ nav .link {
   font-size: 1.2em;
   background: rgb(133, 195, 220);
 }
+
+.year_select {
+  background: rgb(133, 195, 220);
+  font-weight: bold;
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .year_select {
+    background: rgb(133, 195, 220);
+    font-weight: bold;
+    display: block;
+  }
+
+  .year_nav {
+    display: none;
+  }
+}

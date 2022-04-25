@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import omdbApi from "../omdbApi.js";
 import InfoItem from "./infoItem.jsx";
+import { getMovieById } from "../services/movieService";
 
 export default function DisplayItemInfo() {
   const [isLoading, setIsLoading] = useState(false);
@@ -10,14 +10,15 @@ export default function DisplayItemInfo() {
   let params = useParams();
 
   useEffect(() => {
-    getMovieById(params.id);
+    getSingleMovie(params.id);
+    window.scrollTo(0, 0);
   }, [params.id]);
 
-  const getMovieById = async (_movieId) => {
+  const getSingleMovie = async (_movieId) => {
     setIsLoading(true);
     let tempMovie = {};
 
-    const responseRes = await omdbApi.get(`&i=${_movieId}`);
+    const responseRes = await getMovieById(_movieId);
     tempMovie = responseRes.data;
 
     if (tempMovie.Poster === "N/A") {
