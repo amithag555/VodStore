@@ -6,7 +6,10 @@ export default function InfoLayout() {
   return (
     <div>
       <Header />
-      <Outlet />
+
+      <main>
+        <Outlet />
+      </main>
 
       <footer>
         <div>&copy; 2022 Amit Hagbi</div>

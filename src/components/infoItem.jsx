@@ -28,9 +28,6 @@ export default function InfoItem(props) {
     }
 
     setStarArr(tempArr);
-
-    console.log(wholeNumber);
-    console.log(tempArr);
   }, []);
 
   return (
